@@ -10,11 +10,7 @@ class ContrastformController extends Controller
     
      
     public function index(Request $request)
-    {
-        
-        
-        
-        
+    {   
         $name = $request->input('name');
         $bun = $request->input('bun');
         $creatinine = $request->input('creatinine');
@@ -24,12 +20,10 @@ class ContrastformController extends Controller
         $needlegauge = $request->input('needlegauge');
         $contrastreaction = $request->input('contrastreaction');
           
-        
-       
         return view('/contrastform' , compact('name','bun' ,'creatinine', 'gfr', 'contrasttype', 'needlegauge' ,'contrastamount', 'contrastreaction'));
  
         
     }
-    //dd($request->all);
+    
 
 }
